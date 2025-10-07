@@ -1,0 +1,20 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* this will center  your image */
+/* img{
+  display: block;
+  margin: 0 auto;
+} */
+
+h4 img{
+  width: 30%;
+}
+
+/* maybe add flex here to have side by side images */
