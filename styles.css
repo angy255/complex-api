@@ -1,20 +1,142 @@
-/******************************************
-/* CSS
-/*******************************************/
+/* styling done with help of chatgpt */
 
-/* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* this will center  your image */
-/* img{
-  display: block;
-  margin: 0 auto;
-} */
+body {
+  background: #1f2227;
+  color: #b5f4a5;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 30px 15px;
+  min-height: 100vh;
+  text-align: center;
+}
 
-h4 img{
+h1 {
+  font-size: 2.5rem;
+  color: #00ff7f;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #7fff00;
+  margin: 15px 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #b5f4a5;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 15px 0 25px 0;
+  font-weight: 600;
+  color: #39ff14;
+}
+
+input#country {
+  padding: 12px 15px;
+  width: 300px;
+  max-width: 90%;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #00ff7f;
+  margin-bottom: 15px;
+  outline: none;
+  background: #111;
+  color: #b5f4a5;
+  transition: all 0.3s ease;
+}
+
+input#country:focus {
+  border-color: #7fff00;
+  box-shadow: 0 0 8px rgba(127,255,0,0.3);
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #00ff7f, #39ff14);
+  color: #0d1117;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  background: linear-gradient(90deg, #39ff14, #00ff7f);
+}
+
+#firstImg, #flag {
   width: 30%;
+  height: auto;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
 }
 
-/* maybe add flex here to have side by side images */
+#firstImg:hover, #flag:hover {
+  transform: scale(1.05);
+}
+
+h4 img#flag {
+  width: 50%;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+/*map link*/
+
+div a {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #00ff7f;
+  border: 1px solid #00ff7f;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+div a:hover {
+  background: #00ff7f;
+  color: #0d1117;
+  transform: translateY(-2px);
+}
+
+span {
+  display: block;
+  margin: 8px 0;
+  font-size: 0.95rem;
+  color: #7fff00;
+}
+
+/* responsiveness */
+
+@media (max-width: 600px) {
+  input#country { width: 90%; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3, h4, h5 { font-size: 1rem; }
+  #firstImg, #flag { width: 100px; }
+  h4 img#flag { width: 50px; }
+}
+

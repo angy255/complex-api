@@ -19,7 +19,7 @@ function getCountryInfo() {
       console.log("restcountries sends info");
 
       console.log(data);
-      document.querySelector("h2").innerText = data[0].capital[0];
+      document.querySelector("h2").innerText =`Capital: ${data[0].capital[0]} `;
       document.querySelector(
         "h3"
       ).innerText = ` Continent: ${data[0].continents[0]} | Population: ${data[0].population} | Region: ${data[0].region} `;
